@@ -62,7 +62,7 @@ class CodeViewController: UIViewController {
         
         modalView.animation = "slideRight"
         modalView.animateFrom = false
-        modalView.animateToNext({
+        modalView.spring_animateToNext({
             self.dismissViewControllerAnimated(false, completion: nil)
         })
     }
@@ -70,7 +70,7 @@ class CodeViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        modalView.animate()
+        modalView.spring_animate()
         
         UIApplication.sharedApplication().sendAction(#selector(SpringViewController.minimizeView(_:)), to: nil, from: self, forEvent: nil)
     }

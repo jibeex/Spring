@@ -82,7 +82,7 @@ class SpringViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func animateView() {
         setOptions()
-        ballView.animate()
+        ballView.spring_animate()
     }
     
     func setOptions() {

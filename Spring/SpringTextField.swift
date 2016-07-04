@@ -53,19 +53,19 @@ public class SpringTextField: UITextField, Springable {
         spring.customLayoutSubviews()
     }
 
-    public func animate() {
+    public func spring_animate() {
         self.spring.animate()
     }
 
-    public func animateNext(completion: () -> ()) {
+    public func spring_animateNext(completion: () -> ()) {
         self.spring.animateNext(completion)
     }
 
-    public func animateTo() {
+    public func spring_animateTo() {
         self.spring.animateTo()
     }
 
-    public func animateToNext(completion: () -> ()) {
+    public func spring_animateToNext(completion: () -> ()) {
         self.spring.animateToNext(completion)
     }
 }

@@ -46,10 +46,10 @@ import UIKit
     var transform : CGAffineTransform { get set }
     var alpha : CGFloat { get set }
     
-    func animate()
-    func animateNext(completion: () -> ())
-    func animateTo()
-    func animateToNext(completion: () -> ())
+    func spring_animate()
+    func spring_animateNext(completion: () -> ())
+    func spring_animateTo()
+    func spring_animateToNext(completion: () -> ())
 }
 
 public class Spring : NSObject {

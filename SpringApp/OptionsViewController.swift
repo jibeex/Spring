@@ -121,7 +121,7 @@ class OptionsViewController: UIViewController {
         
         UIApplication.sharedApplication().sendAction(#selector(SpringViewController.minimizeView(_:)), to: nil, from: self, forEvent: nil)
         
-        modalView.animate()
+        modalView.spring_animate()
     }
     
     func getString(name: String, value: CGFloat) -> String {
